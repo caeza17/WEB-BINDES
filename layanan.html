@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan Administrasi – Desa Buah Berak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-layanan">
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="container inner">
+      <div class="logo-area">
+        <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+        <div class="logo-text">
+          <div class="kecamatan">Pemerintah Desa</div>
+          <div class="desa-name">BUAH BERAK</div>
+          <div class="sub">Kec. Kalianda &middot; Kab. Lampung Selatan</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="profil.html">Profil Desa</a>
+        <a href="pemerintahan.html">Pemerintahan</a>
+        <a href="berita.html">Berita</a>
+        <a href="umkm.html">UMKM</a>
+        <a href="wisata.html">Wisata</a>
+        <a href="layanan.html" class="active">Layanan</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html#beranda" onclick="closeMobileNav()">Beranda</a>
+      <a href="profil.html" onclick="closeMobileNav()">Profil Desa</a>
+      <a href="pemerintahan.html" onclick="closeMobileNav()">Pemerintahan</a>
+      <a href="berita.html" onclick="closeMobileNav()">Berita</a>
+      <a href="umkm.html" onclick="closeMobileNav()">UMKM</a>
+      <a href="wisata.html" onclick="closeMobileNav()">Wisata</a>
+      <a href="layanan.html" onclick="closeMobileNav()">Layanan</a>
+      <a href="index.html#kontak" onclick="closeMobileNav()">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- ═══ PAGE BANNER ═══ -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="section-label left" style="margin-bottom:.5rem;"><span class="bar"></span> Pelayanan Publik</div>
+      <h1>Layanan Administrasi Desa</h1>
+      <div class="breadcrumb"><a href="index.html">Beranda</a> &nbsp;/&nbsp; Layanan</div>
+    </div>
+  </div>
+
+<section class="layanan" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" style="justify-content:center;">Pelayanan Publik</div>
+        <h2 class="section-title">Layanan Administrasi Desa</h2>
+        <p>Kami menyediakan berbagai layanan administrasi kependudukan untuk memenuhi kebutuhan warga Desa Buah Berak.</p>
+      </div>
+      <div class="layanan-grid">
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="domisili">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 9h.01M15 9h.01M9 12h.01M15 12h.01"/></svg></div>
+          <h3>Surat Keterangan Domisili</h3>
+          <p>Persyaratan yang perlu dibawa ke Balai Desa untuk pengurusan surat domisili.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="ktpkk">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="9" cy="10" r="2.5"/><path d="M6.5 16c.7-1.7 4.3-1.7 5 0M14 9h3M14 12h3M14 15h2"/></svg></div>
+          <h3>Surat Pengantar KTP / KK</h3>
+          <p>Persyaratan untuk pengantar pembuatan, perubahan, atau pengurusan KTP dan KK.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="sktm">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 4.5v6c0 4.8-3.4 7.2-9 8.5-5.6-1.3-9-3.7-9-8.5v-6L12 3z"/><path d="M12 8v5M12 16h.01"/></svg></div>
+          <h3>Surat Keterangan Tidak Mampu</h3>
+          <p>Persyaratan pengurusan SKTM untuk keperluan pendidikan, kesehatan, atau sosial.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="usaha">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><path d="M4 10h16v10H4z"/><path d="M3 10l2-5h14l2 5"/><path d="M8 10v3M16 10v3M8 20v-5h8v5"/></svg></div>
+          <h3>Surat Keterangan Usaha</h3>
+          <p>Persyaratan bagi warga yang membutuhkan surat keterangan usaha dari desa.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="waris">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21v-2a5 5 0 0 1 10 0v2M14 21v-1.5a4 4 0 0 1 7 0V21"/></svg></div>
+          <h3>Pembuatan NA (Pengantar Nikah)</h3>
+          <p>Persyaratan umum yang perlu disiapkan untuk pengurusan surat keterangan waris.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+
+        <article class="layanan-card" tabindex="0" role="button" data-service="rekomendasi">
+          <div class="layanan-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/><path d="M16 16l2 2 3-4"/></svg></div>
+          <h3>Surat Rekomendasi</h3>
+          <p>Persyaratan umum untuk pengurusan surat rekomendasi sesuai keperluan warga.</p>
+          <div class="layanan-more">Lihat Persyaratan <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+        </article>
+      </div>
+
+
+  <!-- ═══ PENGADUAN MASYARAKAT CTA ═══ -->
+   <div class="pengaduan-page">
+    <div class="container">
+      <div class="pengaduan-layout">
+        <section class="pengaduan-card">
+          <div class="pengaduan-card-head">
+            <div class="pengaduan-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.2 9.2 0 0 1-4.1-.9L3 21l1.9-4.2A8.3 8.3 0 0 1 3 11.5 8.5 8.5 0 0 1 12 3a8.5 8.5 0 0 1 9 8.5z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></div>
+            <div>
+              <h2>Sampaikan Pengaduan, Saran, atau Aspirasi</h2>
+              <p>Gunakan formulir pengaduan masyarakat untuk menyampaikan masukan terkait pelayanan, pembangunan, fasilitas, maupun kondisi di Desa Buah Berak.</p>
+            </div>
+          </div>
+
+          <div class="pengaduan-steps">
+            <div class="pengaduan-step"><span class="pengaduan-step-num">1</span><span>Siapkan informasi pengaduan secara jelas dan kronologis.</span></div>
+            <div class="pengaduan-step"><span class="pengaduan-step-num">2</span><span>Siapkan foto atau dokumen pendukung jika diperlukan.</span></div>
+            <div class="pengaduan-step"><span class="pengaduan-step-num">3</span><span>Klik tombol di bawah untuk mengisi Google Form pengaduan.</span></div>
+          </div>
+
+          <div class="google-form-placeholder">
+            <strong>Form Pengaduan Masyarakat</strong>
+            <span>Link Google Form dapat ditambahkan oleh admin desa.</span>
+            <!-- GANTI href di bawah dengan link Google Form Desa Buah Berak -->
+            <a class="btn-google-form" href="#" onclick="return false;">Buka Form Pengaduan <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2.4"><path d="M14 3h7v7"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></a>
+          </div>
+        </section>
+
+        <div class="layanan-info" style="margin-top:0;">
+          <div class="layanan-info-box"><strong>Catatan:</strong> Untuk pengaduan yang berkaitan dengan keadaan darurat atau keselamatan, hubungi pihak berwenang/instansi terkait secara langsung.</div>
+        </div>
+      </div>
+    </div>
+    <div class="layanan-info">
+        <div class="layanan-info-box">
+          <strong>Jam Pelayanan:</strong> Senin – Jumat, pukul 08.00 – 14.00 WIB
+          &nbsp;&bull;&nbsp;
+          <strong>Lokasi:</strong> Balai Desa Buah Berak, Jl. Raya Buah Berak No. 1
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+<!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <div class="footer-brand">
+            <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+            <div>
+              <div class="footer-brand-name">Desa Buah Berak</div>
+              <div class="footer-brand-sub">Website Resmi Pemerintah Desa</div>
+            </div>
+          </div>
+          <p class="footer-desc">Melayani masyarakat dengan sepenuh hati demi terwujudnya Desa Buah Berak yang mandiri, sejahtera, dan berbudaya.</p>
+        </div>
+        <!-- Tautan cepat -->
+        <div>
+          <div class="footer-heading">Tautan Cepat</div>
+          <ul class="footer-links">
+            <li><a href="index.html#beranda"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Beranda</a></li>
+            <li><a href="profil.html"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Profil Desa</a></li>
+            <li><a href="pemerintahan.html"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Pemerintahan</a></li>
+            <li><a href="berita.html"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Berita</a></li>
+            <li><a href="layanan.html"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Layanan</a></li>
+            <li><a href="index.html#kontak"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg> Kontak</a></li>
+          </ul>
+        </div>
+        <!-- Tautan terkait -->
+        <div>
+          <div class="footer-heading">Tautan Terkait</div>
+          <ul class="footer-links">
+            <li><a href="#"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Kab. Lampung Selatan</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Kec. Kalianda</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Disdukcapil</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> BPJS Kesehatan</a></li>
+            <li><a href="#"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Puskesmas Kalianda</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Pemerintah Desa Buah Berak. Hak Cipta Dilindungi.</span>
+        <span>Dikelola oleh Tim IT Desa Buah Berak</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/layanan.js"></script>
+
+</body>
+</html>

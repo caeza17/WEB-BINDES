@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UMKM Desa Buah Berak – produk lokal dan usaha masyarakat desa." />
+  <title>UMKM Desa Buah Berak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="potensi-page simple-potential-page">
+<header class="header">
+  <div class="container inner">
+    <a class="logo-area" href="index.html#beranda" aria-label="Beranda Desa Buah Berak">
+      <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+      <div class="logo-text"><div class="kecamatan">Pemerintah Desa</div><div class="desa-name">BUAH BERAK</div><div class="sub">Kec. Kalianda · Kab. Lampung Selatan</div></div>
+    </a>
+
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html#beranda">Beranda</a>
+      <a href="profil.html">Profil Desa</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="berita.html">Berita</a>
+      <a href="umkm.html" class="active">UMKM</a>
+      <a href="wisata.html">Wisata</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="index.html#kontak">Kontak</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-controls="mobileNav" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
+    <a href="index.html#beranda" onclick="closeMobileNav()">Beranda</a><a href="profil.html" onclick="closeMobileNav()">Profil Desa</a><a href="pemerintahan.html" onclick="closeMobileNav()">Pemerintahan</a><a href="berita.html" onclick="closeMobileNav()">Berita</a><a href="umkm.html" class="active" onclick="closeMobileNav()">UMKM</a><a href="wisata.html" onclick="closeMobileNav()">Wisata</a><a href="layanan.html" onclick="closeMobileNav()">Layanan</a><a href="pengaduan.html" onclick="closeMobileNav()">Pengaduan</a><a href="index.html#kontak" onclick="closeMobileNav()">Kontak</a>
+  </nav>
+</header>
+<main>
+  <div class="page-banner">
+    <div class="container">
+      <div class="section-label left" style="margin-bottom:.5rem;"><span class="bar"></span> Potensi Ekonomi Desa</div>
+      <h1>UMKM Desa Buah Berak</h1>
+      <div class="breadcrumb"><a href="index.html">Beranda</a> &nbsp;/&nbsp; UMKM</div>
+    </div>
+  </div>
+  <section class="simple-list-section" id="daftar-umkm">
+    <div class="container">
+      <div class="section-header center simple-section-head">
+        <div class="section-label" style="justify-content:center;">Etalase Desa</div>
+        <h2 class="section-title">Produk Lokal Buah Berak</h2>
+        <p>Pilih salah satu UMKM untuk melihat profil usaha, informasi pemilik, kontak, dan galeri produk.</p>
+      </div>
+      <div class="simple-card-grid">
+        <a class="simple-product-card" href="umkm-detail.html?id=kerupuk-tahu" aria-label="Lihat Kerupuk Tahu Bagus Hasby">
+          <div class="simple-product-image"><img src="img/kerupuktahu.png" alt="Kerupuk Tahu Bagus Hasby" loading="lazy"><span class="simple-number">01</span></div>
+          <div class="simple-product-body"><span class="simple-tag">Kuliner</span><h3>Kerupuk Tahu Bagus Hasby</h3><p>Kerupuk tahu khas UMKM Desa Buah Berak.</p><span class="wa-link">Lihat Profil UMKM <b>→</b></span></div>
+        </a>
+        <a class="simple-product-card" href="umkm-detail.html?id=emping" aria-label="Lihat Emping Semoga Jaya">
+          <div class="simple-product-image"><img src="img/emping.jpg" alt="Emping Semoga Jaya" loading="lazy"><span class="simple-number">02</span></div>
+          <div class="simple-product-body"><span class="simple-tag">Kuliner</span><h3>Emping Semoga Jaya</h3><p>Produk emping melinjo dari pelaku usaha lokal.</p><span class="wa-link">Lihat Profil UMKM <b>→</b></span></div>
+        </a>
+        <a class="simple-product-card" href="umkm-detail.html?id=batu-ulekan" aria-label="Lihat Batu Ulekan Masdi">
+          <div class="simple-product-image"><img src="img/masdi.jpg" alt="Batu Ulekan Masdi" loading="lazy"><span class="simple-number">03</span></div>
+          <div class="simple-product-body"><span class="simple-tag">Kerajinan</span><h3>Batu Ulekan Masdi</h3><p>Peralatan dapur berbahan batu untuk kebutuhan rumah tangga.</p><span class="wa-link">Lihat Profil UMKM <b>→</b></span></div>
+        </a>
+        <a class="simple-product-card" href="umkm-detail.html?id=anyaman-lidi" aria-label="Lihat Anyaman Lidi">
+          <div class="simple-product-image"><img src="img/anyamanlidi.jpeg" alt="Anyaman Lidi" loading="lazy"><span class="simple-number">04</span></div>
+          <div class="simple-product-body"><span class="simple-tag">Kerajinan</span><h3>Anyaman Lidi</h3><p>Kerajinan anyaman berbahan lidi karya masyarakat desa.</p><span class="wa-link">Lihat Profil UMKM <b>→</b></span></div>
+        </a>
+        <a class="simple-product-card" href="umkm-detail.html?id=kulit-lumpia" aria-label="Lihat Kulit Lumpia Erlangga">
+          <div class="simple-product-image"><img src="img/lumpia.jpeg" alt="Kulit Lumpia Erlangga" loading="lazy"><span class="simple-number">05</span></div>
+          <div class="simple-product-body"><span class="simple-tag">Kuliner</span><h3>Kulit Lumpia Erlangga</h3><p>Kulit lumpia untuk kebutuhan rumah tangga dan usaha kuliner.</p><span class="wa-link">Lihat Profil UMKM <b>→</b></span></div>
+        </a>
+      </div>
+      <div class="simple-info"><span>i</span><p>Informasi pemilik, alamat, nomor WhatsApp, dan foto produk dapat diperbarui oleh admin desa sesuai data UMKM terbaru.</p></div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid">
+  <div><div class="footer-brand"><img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" /><div><div class="footer-brand-name">Desa Buah Berak</div><div class="footer-brand-sub">Website Resmi Pemerintah Desa</div></div></div><p class="footer-desc">Melayani masyarakat dengan sepenuh hati demi terwujudnya Desa Buah Berak yang mandiri, sejahtera, dan berbudaya.</p></div>
+  <div><div class="footer-heading">Tautan Cepat</div><ul class="footer-links"><li><a href="index.html#beranda">› Beranda</a></li><li><a href="profil.html">› Profil Desa</a></li><li><a href="pemerintahan.html">› Pemerintahan</a></li><li><a href="berita.html">› Berita</a></li><li><a href="umkm.html">› UMKM</a></li><li><a href="wisata.html">› Wisata</a></li><li><a href="layanan.html">› Layanan</a></li><li><a href="pengaduan.html">› Pengaduan</a></li><li><a href="index.html#kontak">› Kontak</a></li></ul></div>
+  <div><div class="footer-heading">Potensi Desa</div><ul class="footer-links"><li><a href="umkm.html">› UMKM Desa</a></li><li><a href="wisata.html">› Wisata Desa</a></li><li><a href="profil.html">› Profil &amp; Wilayah</a></li><li><a href="berita.html">› Berita Desa</a></li></ul></div>
+</div><div class="footer-bottom"><span>© 2026 Pemerintah Desa Buah Berak. Hak Cipta Dilindungi.</span><span>Dikelola oleh Tim IT Desa Buah Berak</span></div></div></footer>
+<script src="js/script.js"></script><script src="js/potensi.js"></script>
+</body></html>

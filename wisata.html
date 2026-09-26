@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wisata Way Belerang Desa Buah Berak, Kecamatan Kalianda, Kabupaten Lampung Selatan." />
+  <title>Wisata Way Belerang | Desa Buah Berak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="wisata-page">
+<header class="header">
+  <div class="container inner">
+    <div class="logo-area">
+      <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+      <div class="logo-text">
+        <div class="kecamatan">Pemerintah Desa</div>
+        <div class="desa-name">BUAH BERAK</div>
+        <div class="sub">Kec. Kalianda · Kab. Lampung Selatan</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html#beranda">Beranda</a>
+      <a href="profil.html">Profil Desa</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="berita.html">Berita</a>
+      <a href="umkm.html">UMKM</a>
+      <a href="wisata.html" class="active">Wisata</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="index.html#kontak">Kontak</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#beranda" onclick="closeMobileNav()">Beranda</a>
+    <a href="profil.html" onclick="closeMobileNav()">Profil Desa</a>
+    <a href="pemerintahan.html" onclick="closeMobileNav()">Pemerintahan</a>
+    <a href="berita.html" onclick="closeMobileNav()">Berita</a>
+    <a href="umkm.html" onclick="closeMobileNav()">UMKM</a>
+    <a href="wisata.html" onclick="closeMobileNav()">Wisata</a>
+    <a href="layanan.html" onclick="closeMobileNav()">Layanan</a>
+    <a href="pengaduan.html" onclick="closeMobileNav()">Pengaduan</a>
+    <a href="index.html#kontak" onclick="closeMobileNav()">Kontak</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="wisata-hero">
+    <div class="wisata-hero-bg">
+      <img src="img/profil.jpg" alt="" aria-hidden="true">
+    </div>
+    <div class="wisata-hero-overlay"></div>
+    <div class="container wisata-hero-content">
+      <div class="wisata-hero-copy reveal">
+        <div class="wisata-kicker"><span></span> POTENSI WISATA DESA</div>
+        <h1>Way Belerang</h1>
+        <p>Menikmati hangatnya air belerang di tengah suasana alami kaki Gunung Rajabasa, salah satu daya tarik wisata Desa Buah Berak.</p>
+        <div class="wisata-hero-actions">
+          <a href="#tentang" class="wisata-btn wisata-btn-gold">Jelajahi Wisata <span>↓</span></a>
+          <a href="https://maps.app.goo.gl/ZZ1rMHnab6sSo7R89" target="_blank" rel="noopener" class="wisata-btn wisata-btn-light">Buka Google Maps <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wisata-about" id="tentang">
+    <div class="container">
+      <div class="wisata-section-heading reveal">
+        <div class="section-label left"><span class="bar"></span> Tentang Destinasi</div>
+        <h2>Hangatnya alam,<br><em>tenangnya suasana.</em></h2>
+      </div>
+
+      <div class="wisata-about-grid">
+        <div class="wisata-about-text reveal">
+          <p class="wisata-lead">Way Belerang merupakan pemandian air panas yang berada di Desa Buah Berak, Kecamatan Kalianda, Kabupaten Lampung Selatan.</p>
+          <p>Destinasi ini menawarkan pengalaman berendam di air belerang sambil menikmati suasana yang rindang dan sejuk. Lokasinya berada di kawasan kaki Gunung Rajabasa dan relatif dekat dari pusat Kota Kalianda.</p>
+          <p>Dengan suasana alam yang masih asri, Way Belerang cocok menjadi pilihan untuk bersantai bersama keluarga maupun menikmati waktu luang.</p>
+        </div>
+
+        <div class="wisata-highlight reveal-stagger">
+          <div class="wisata-highlight-card">
+            <span class="wisata-highlight-icon">♨</span>
+            <div><strong>Air Belerang</strong><small>Pemandian air panas alami</small></div>
+          </div>
+          <div class="wisata-highlight-card">
+            <span class="wisata-highlight-icon">⌖</span>
+            <div><strong>Desa Buah Berak</strong><small>Kecamatan Kalianda, Lampung Selatan</small></div>
+          </div>
+          <div class="wisata-highlight-card">
+            <span class="wisata-highlight-icon">❋</span>
+            <div><strong>Nuansa Alam</strong><small>Rindang, sejuk dan asri</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="wisata-gallery-section">
+    <div class="container">
+      <div class="wisata-gallery-head reveal">
+        <div>
+          <div class="section-label left"><span class="bar"></span> Galeri Wisata</div>
+          <h2>Suasana Way Belerang</h2>
+          <p>Geser galeri untuk melihat lebih banyak foto destinasi.</p>
+        </div>
+        <div class="wisata-gallery-controls" aria-label="Kontrol galeri">
+          <button type="button" class="gallery-arrow gallery-prev" aria-label="Foto sebelumnya">←</button>
+          <button type="button" class="gallery-arrow gallery-next" aria-label="Foto berikutnya">→</button>
+        </div>
+      </div>
+
+      <div class="wisata-gallery-wrap reveal">
+        <div class="wisata-gallery" id="wisataGallery" tabindex="0" aria-label="Galeri foto Way Belerang">
+          <figure class="wisata-photo">
+            <img src="img/belerang1.jpg" alt="Pemandian Way Belerang" onerror="this.onerror=null;this.src='img/wisata-way-belerang.svg';">
+            <figcaption><span>01</span> Pemandian Way Belerang</figcaption>
+          </figure>
+          <figure class="wisata-photo">
+            <img src="img/belerang2.jpg" alt="Suasana alam Way Belerang" onerror="this.onerror=null;this.src='img/wisata-way-belerang.svg';">
+            <figcaption><span>02</span> Suasana Alam</figcaption>
+          </figure>
+          <figure class="wisata-photo">
+            <img src="img/belerang3.jpg" alt="Kolam pemandian Way Belerang" onerror="this.onerror=null;this.src='img/wisata-way-belerang.svg';">
+            <figcaption><span>03</span> Kolam Pemandian</figcaption>
+          </figure>
+          <figure class="wisata-photo">
+            <img src="img/belerang4.jpg" alt="Area sekitar Way Belerang" onerror="this.onerror=null;this.src='img/wisata-way-belerang.svg';">
+            <figcaption><span>04</span> Area Wisata</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="wisata-gallery-hint">← Geser kiri / kanan →</p>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section class="wisata-facilities">
+    <div class="container">
+      <div class="wisata-facilities-grid">
+        <div class="wisata-section-heading reveal">
+          <div class="section-label left"><span class="bar"></span> Fasilitas</div>
+          <h2>Yang tersedia<br><em>untuk pengunjung.</em></h2>
+          <p>Beberapa fasilitas yang tercatat tersedia di kawasan wisata membantu pengunjung menikmati kunjungan dengan lebih nyaman.</p>
+        </div>
+
+        <div class="facility-list reveal-stagger">
+          <div class="facility-item"><span>♨</span><div><strong>Kolam Air Panas</strong><small>Area pemandian air panas untuk berendam.</small></div></div>
+          <div class="facility-item"><span>⌂</span><div><strong>Gazebo & Tempat Duduk</strong><small>Tempat beristirahat dan menikmati suasana sekitar.</small></div></div>
+          <div class="facility-item"><span>◫</span><div><strong>Kamar Mandi & Bilas</strong><small>Fasilitas untuk membersihkan diri setelah berendam.</small></div></div>
+          <div class="facility-item"><span>☕</span><div><strong>Warung Kuliner</strong><small>Tersedia warung di sekitar kawasan wisata.</small></div></div>
+          <div class="facility-item"><span>⌖</span><div><strong>Area Parkir</strong><small>Area untuk kendaraan pengunjung.</small></div></div>
+          <div class="facility-item"><span>✦</span><div><strong>Suasana Alam</strong><small>Lingkungan rindang dan sejuk di kaki Gunung Rajabasa.</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="wisata-location">
+    <div class="container">
+      <div class="wisata-location-card reveal">
+        <div class="wisata-location-copy">
+          <div class="section-label left"><span class="bar"></span> Lokasi Wisata</div>
+          <h2>Temukan Way Belerang<br><em>di Desa Buah Berak.</em></h2>
+          <p>Way Belerang berada di Desa Buah Berak, Kecamatan Kalianda, Kabupaten Lampung Selatan, Provinsi Lampung.</p>
+          <div class="location-address"><span>⌖</span><div><strong>Way Belerang</strong><small>Desa Buah Berak, Kec. Kalianda, Kab. Lampung Selatan</small></div></div>
+          <a href="https://maps.app.goo.gl/ZZ1rMHnab6sSo7R89" target="_blank" rel="noopener" class="wisata-btn wisata-btn-navy">Buka Rute di Google Maps <span>↗</span></a>
+        </div>
+        <div class="wisata-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18883.779759960773!2d105.58585990384168!3d-5.738226689916133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4111d8654b04c1%3A0xe5bd5acd99ef7092!2sPemandian%20Air%20Panas%20Way%20Belerang!5e0!3m2!1sen!2sid!4v1788367326089!5m2!1sen!2sid" 
+        width="600" 
+        height="800"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+          <div>
+            <div class="footer-brand-name">Desa Buah Berak</div>
+            <div class="footer-brand-sub">Website Resmi Pemerintah Desa</div>
+          </div>
+        </div>
+        <p class="footer-desc">Melayani masyarakat dengan sepenuh hati demi terwujudnya Desa Buah Berak yang mandiri, sejahtera, dan berbudaya.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Tautan Cepat</div>
+        <ul class="footer-links">
+          <li><a href="index.html#beranda">› Beranda</a></li><li><a href="profil.html">› Profil Desa</a></li>
+          <li><a href="pemerintahan.html">› Pemerintahan</a></li><li><a href="berita.html">› Berita</a></li>
+          <li><a href="umkm.html">› UMKM</a></li><li><a href="wisata.html">› Wisata</a></li>
+          <li><a href="layanan.html">› Layanan</a></li><li><a href="pengaduan.html">› Pengaduan</a></li>
+          <li><a href="index.html#kontak">› Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Potensi Desa</div>
+        <ul class="footer-links">
+          <li><a href="umkm.html">› UMKM Desa</a></li><li><a href="wisata.html">› Wisata Desa</a></li>
+          <li><a href="profil.html">› Profil & Wilayah</a></li><li><a href="berita.html">› Berita Desa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pemerintah Desa Buah Berak. Hak Cipta Dilindungi.</span>
+      <span>Dikelola oleh Tim IT Desa Buah Berak</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const gallery = document.getElementById('wisataGallery');
+  const prev = document.querySelector('.gallery-prev');
+  const next = document.querySelector('.gallery-next');
+  if (!gallery) return;
+
+  const move = (direction) => {
+    const card = gallery.querySelector('.wisata-photo');
+    const gap = parseFloat(getComputedStyle(gallery).gap) || 16;
+    const amount = card ? card.getBoundingClientRect().width + gap : gallery.clientWidth * .85;
+    gallery.scrollBy({ left: direction * amount, behavior: 'smooth' });
+  };
+
+  prev?.addEventListener('click', () => move(-1));
+  next?.addEventListener('click', () => move(1));
+
+  gallery.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') move(-1);
+    if (e.key === 'ArrowRight') move(1);
+  });
+});
+</script>
+</body>
+</html>

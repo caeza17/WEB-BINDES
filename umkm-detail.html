@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Profil UMKM Desa Buah Berak." />
+  <title>Profil UMKM | Desa Buah Berak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="umkm-detail-page">
+<header class="header">
+  <div class="container inner">
+    <a class="logo-area" href="index.html#beranda" aria-label="Beranda Desa Buah Berak">
+      <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+      <div class="logo-text">
+        <div class="kecamatan">Pemerintah Desa</div>
+        <div class="desa-name">BUAH BERAK</div>
+        <div class="sub">Kec. Kalianda · Kab. Lampung Selatan</div>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="index.html#beranda">Beranda</a>
+      <a href="profil.html">Profil Desa</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="berita.html">Berita</a>
+      <a href="umkm.html" class="active">UMKM</a>
+      <a href="wisata.html">Wisata</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="pengaduan.html">Pengaduan</a>
+      <a href="index.html#kontak">Kontak</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-controls="mobileNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigasi mobile">
+    <a href="index.html#beranda">Beranda</a>
+    <a href="profil.html">Profil Desa</a>
+    <a href="pemerintahan.html">Pemerintahan</a>
+    <a href="berita.html">Berita</a>
+    <a href="umkm.html" class="active">UMKM</a>
+    <a href="wisata.html">Wisata</a>
+    <a href="layanan.html">Layanan</a>
+    <a href="index.html#kontak">Kontak</a>
+  </nav>
+</header>
+
+<main id="umkmDetail">
+  <!-- Tidak menggunakan .page-banner. -->
+  <section class="umkm-detail-intro">
+    <div class="container">
+      <a class="umkm-back-link" href="umkm.html">
+        <span aria-hidden="true">←</span> Kembali ke daftar UMKM
+      </a>
+
+      <div class="umkm-detail-banner reveal">
+        <div class="umkm-banner-copy">
+          <span class="umkm-eyebrow" id="umkmCategory">UMKM DESA</span>
+          <h1 id="umkmName">Kerupuk Tahu Bagus Hasby</h1>
+          <p id="umkmShortDesc">Informasi usaha sedang disiapkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="umkm-gallery-section">
+    <div class="container">
+      <div class="umkm-section-heading reveal">
+        <div>
+          
+          <h2 class="section-title">Produk &amp; Karya Usaha</h2>
+        </div>
+      </div>
+
+      <div class="umkm-carousel-wrap reveal">
+        <button class="umkm-carousel-btn prev" id="galleryPrev" type="button" aria-label="Foto sebelumnya">‹</button>
+        <div class="umkm-carousel" id="galleryCarousel" tabindex="0" aria-label="Galeri foto produk">
+          <div class="umkm-carousel-track" id="galleryTrack"></div>
+        </div>
+        <button class="umkm-carousel-btn next" id="galleryNext" type="button" aria-label="Foto berikutnya">›</button>
+      </div>
+
+      <div class="umkm-gallery-dots" id="galleryDots" aria-label="Indikator galeri"></div>
+    </div>
+  </section>
+
+  <section class="umkm-info-section">
+    <div class="container">
+      <div class="umkm-info-layout">
+        <article class="umkm-info-card reveal">
+          <span class="section-label left"><span class="bar"></span> Tentang Usaha</span>
+          <h2>Profil UMKM</h2>
+          <p id="umkmDescription"></p>
+
+          <div class="umkm-info-list">
+            <div class="umkm-info-row">
+              <span class="umkm-info-icon" aria-hidden="true">▦</span>
+              <div><small>Nama Usaha</small><strong id="infoBusiness">-</strong></div>
+            </div>
+            <div class="umkm-info-row">
+              <span class="umkm-info-icon" aria-hidden="true">◉</span>
+              <div><small>Nama Pemilik</small><strong id="infoOwner">-</strong></div>
+            </div>
+            <div class="umkm-info-row">
+              <span class="umkm-info-icon" aria-hidden="true">⌖</span>
+              <div><small>Alamat Usaha</small><strong id="infoAddress">-</strong></div>
+            </div>
+            <div class="umkm-info-row">
+              <span class="umkm-info-icon" aria-hidden="true">☎</span>
+              <div><small>WhatsApp</small><strong id="infoPhone">-</strong></div>
+            </div>
+          </div>
+        </article>
+
+        <aside class="umkm-contact-card reveal">
+          <div class="umkm-contact-accent"></div>
+          <span class="umkm-contact-label">Ingin membeli?</span>
+          <h2>Hubungi Penjual</h2>
+          <p>Pesan produk secara langsung melalui WhatsApp penjual. Tanyakan ketersediaan, harga, dan cara pengiriman sebelum melakukan pembelian.</p>
+
+          <a id="waButton" class="umkm-wa-button" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="umkm-wa-symbol">WA</span>
+            <span>
+              <strong>Chat via WhatsApp</strong>
+              <small id="waButtonText">Hubungi penjual</small>
+            </span>
+            <b aria-hidden="true">↗</b>
+          </a>
+
+          <div class="umkm-contact-note">
+            <span>i</span>
+            <p>Transaksi dilakukan langsung dengan pemilik UMKM. Pemerintah Desa hanya membantu memperkenalkan produk masyarakat.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="umkm-bottom-cta">
+    <div class="container">
+      <div class="umkm-cta-inner reveal">
+        <div>
+          <span class="section-label left"><span class="bar"></span> Potensi Desa</span>
+          <h2>Temukan UMKM lainnya</h2>
+          <p>Dukung usaha masyarakat lokal dengan mengenal dan membeli produk UMKM Desa Buah Berak.</p>
+        </div>
+        <a class="umkm-cta-button" href="umkm.html">Lihat Semua UMKM <span>→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/LogoDesaBuahBerak.png" alt="Logo Desa Buah Berak" />
+          <div>
+            <div class="footer-brand-name">Desa Buah Berak</div>
+            <div class="footer-brand-sub">Website Resmi Pemerintah Desa</div>
+          </div>
+        </div>
+        <p class="footer-desc">Melayani masyarakat dengan sepenuh hati demi terwujudnya Desa Buah Berak yang mandiri, sejahtera, dan berbudaya.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Tautan Cepat</div>
+        <ul class="footer-links">
+          <li><a href="index.html#beranda">› Beranda</a></li>
+          <li><a href="profil.html">› Profil Desa</a></li>
+          <li><a href="pemerintahan.html">› Pemerintahan</a></li>
+          <li><a href="berita.html">› Berita</a></li>
+          <li><a href="umkm.html">› UMKM</a></li>
+          <li><a href="wisata.html">› Wisata</a></li>
+          <li><a href="layanan.html">› Layanan</a></li>
+          <li><a href="pengaduan.html">› Pengaduan</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Potensi Desa</div>
+        <ul class="footer-links">
+          <li><a href="umkm.html">› UMKM Desa</a></li>
+          <li><a href="wisata.html">› Wisata Desa</a></li>
+          <li><a href="profil.html">› Profil &amp; Wilayah</a></li>
+          <li><a href="berita.html">› Berita Desa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pemerintah Desa Buah Berak. Hak Cipta Dilindungi.</span>
+      <span>Dikelola oleh Tim IT Desa Buah Berak</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+<script src="js/umkm-detail.js"></script>
+</body>
+</html>
